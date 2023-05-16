@@ -3,16 +3,17 @@
 set -uoe pipefail
 
 # Create 1000 files in a directory named lots_of_files
-
+if [[ -d lots_of_files ]]; then
+  rm -rf lots_of_files
+fi
 mkdir -p lots_of_files
 
 script_name=$(basename "$0")
 current_time=$(date "+%Y.%m.%d-%H.%M.%S")
 number_of_files=100
-echo "starting making files"
-mkdir -p slurm_logs
 
-sbatch --wait --output=slurm_logs/slurm_%A_%a.out --array=1-"${number_of_files}"%100 ./slurm_array.sh
+echo "starting making files"
+sbatch --wait --job-name="Making_Files" --output=slurm_logs/slurm_%A_%a.out --array=1-"${number_of_files}"%100 ./slurm_array.sh
 
 
 echo "finished making files"
