@@ -12,9 +12,8 @@ number_of_files=100
 echo "starting making files"
 mkdir -p slurm_logs
 
-jobid=$(sbatch --output=slurm_logs/slurm_%A_%a.out --array=1-"${number_of_files}"%100 ./slurm_array.sh)
+sbatch --wait --output=slurm_logs/slurm_%A_%a.out --array=1-"${number_of_files}"%100 ./slurm_array.sh
 
-srun --jobid="${jobid}" --wait=0
 
 echo "finished making files"
 git add "$0"
