@@ -16,6 +16,10 @@
 1. [Advanced Git](https://github.com/nnja/advanced-git/tree/master) 
     - by Frontend Masters author Nina Zakharenko's
     - link to slides: [SLIDES](https://github.com/nnja/advanced-git/blob/f1697d14ad2578a51d2c96d9cb4c259d219f9bbd/presentation/slides.pdf)
-2. [Git from Bottom Up](https://jwiegley.github.io/git-from-the-bottom-up/1-Repository/7-branching-and-the-power-of-rebase.html)
+2. [Git SCM](https://git-scm.com/doc)
+   - [Reference Manual](https://git-scm.com/docs)
+   - [Pro Git Book](https://git-scm.com/book/en/v2)
+   - [Training](https://githubtraining.github.io/training-manual/#/01_getting_ready_for_class)
+3. [Git from Bottom Up](https://jwiegley.github.io/git-from-the-bottom-up/1-Repository/7-branching-and-the-power-of-rebase.html)
 3. [Youtube Series on Git](https://www.youtube.com/watch?v=Uk5TnFL7jh4&list=PLlcnQQJK8SUjuzpRx0U-VEUzhmJD7vGbO)
 4. More to come
