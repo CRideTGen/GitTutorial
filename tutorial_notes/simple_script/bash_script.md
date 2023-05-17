@@ -24,6 +24,9 @@ git commit -m "initial commit"
 ## 3. Create a Bash Script
 
 ```bash
+# create new branch
+
+git checkout -b editing_script
 
 #open file in nano
 nano make_lots_of_files.sh
