@@ -3,6 +3,8 @@
 set -uoe pipefail
 
 # Create 1000 files in a directory named lots_of_files
+
+
 if [[ -d lots_of_files ]]; then
   rm -f lots_of_files/*
 else
