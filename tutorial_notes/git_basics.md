@@ -91,7 +91,7 @@ git commit -m "useful message describing the purpose of the commit"
    2. checkout branch
       - ``` git checkout <branch name> ```
    3. create new branch
-         - ``` git checkout -b <branch name> ```
+      - ``` git checkout -b <branch name> ```
 2. Tags
    1. add tag
       - ``` git tag <commit> ```
