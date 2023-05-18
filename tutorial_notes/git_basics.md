@@ -112,7 +112,16 @@ git commit -m "useful message describing the purpose of the commit"
 
 ### Reset
 
+### Garbage Collection
+```bash
+# basic
+git gc
 
+# more aggressive to remove unreferenced objects
+git reflog expire --expire=now --all
+git gc --prune=now
+
+```
 
 
 
